@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="max-w-6xl mx-auto px-4 py-15 bg-white border-lg shadow-lg rounded-lg mt-2 mb-4">
+        <nav class="flex items-center justify-between ">
+            <div class="basis-2/6">Anova Baby Shop</div>
+            <div class="flex items-center gap-2 basis-3/6 px-2">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="shop.html">Shop</a></div>
+                <div><a href="about.html">About US</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+            </div>
+            <div class="basis-1/6"><a href="login.html">Sign In</a></div>
+            <div class="flex gap-1 basis-1/6">
+                <div>Cart</div>
+                <div>0</div>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-xl mx-auto mt-30 border-md shadow-lg rounded-lg bg-white px-6 py-4 mb-4">
+        <form action="">
+            <div class="text-2xl text-center font-semibold font-serif mb-4">Sign Up</div>
+            <div class="flex flex-col gap-3">
+                <input type="text" name="fname" id="fname" placeholder="First Name" required class="border px-3 py-2 mb-4 rounded-lg">
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required class="border px-3 py-2 mb-4 rounded-lg">
+                <input type="email" name="email" id="email" placeholder="Email Address" required class="border px-3 py-2 mb-4 rounded-lg">
+                <input type="password" name="pass" id="pass" placeholder="Password" required class="border px-3 py-2 mb-4 rounded-lg">
+            </div>
+        </form>
+        <button class="w-full py-2 text-center text-2xl font-semibold font-serif bg-blue-300 text-white rounded-md mb-4">Register</button>
+        <div>Already have an account? <a href="login.html">Login</a></div>
+        <p class="message"></p>
+    </main>
+    <footer class="max-w-6xl mx-auto px-3 py-10 bg-black border-lg shadow-lg rounded-lg text-white text-center mb-4">
+        <p>&copy; Anova Baby Shop 2026. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
