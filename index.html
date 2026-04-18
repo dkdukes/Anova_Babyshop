@@ -9,141 +9,83 @@
 </head>
 
 <body class="bg-gray-100">
-    <header class="max-w-6xl mx-auto px-4 py-15 bg-white border-lg shadow-lg rounded-lg mt-2 mb-4">
-        <nav class="flex items-center justify-between ">
-            <div class="basis-2/6">Anova Baby Shop</div>
-            <div class="flex items-center gap-2 basis-3/6 px-2">
-                <div><a href="index.html">Home</a></div>
-                <div><a href="shop.html">Shop</a></div>
-                <div><a href="about.html">About US</a></div>
-                <div><a href="contact.html">Contact Us</a></div>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Anova Babyshop</a>
+            <div class="md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="shop.html" class="hover:text-gray-600 font-semibold">Shop</a>
+                <a href="about.html" class="hover:text-gray-600">About Us</a>
+                <a href="contact.html" class="hover:text-gray-600">Contact Us</a>
             </div>
-            <div class="basis-1/6"><a href="login.html">Sign In</a></div>
-             <div class="flex gap-1 basis-1/6">
-                <button class="flex gap-1 cursor-pointer" id="btnItems"> 
-                    <div>Cart</div>
-                <div id="counter">0</div>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
+                <button class="relative text-lg">
+                    🛒
+                    <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
+                        id="counter">0</span>
+                </button>
             </div>
+
+
         </nav>
     </header>
-    <main class="max-w-6xl mx-auto px-3 py-2">
+    <main>
         <!-- Hero section -->
-        <section>
-            <div>
-                <div><img src="Assets/images/baby1.avif" alt="Baby Image" class="active w-full h-200 mb-4"></div>
-                <div><img src="Assets/images/rompers.avif" alt="Baby Image" class="hidden"></div>
-                <div><img src="Assets/images/carriers.avif" alt="Baby Image" class="hidden"></div>
-            </div>
+        <section class="bg-gray-100 py-16 px-4 md:px-12">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-bold mb-4">
+                        Soft & Safe Baby Essentials
+                    </h1>
+                    <p class="text-gray-600 mb-6">
+                        Quality products designed for comfort, safety, and everyday parenting.
+                    </p>
+                    <button onclick="window.location.href='shop.html'"
+                        class="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800">
+                        Shop Now
+                    </button>
+                </div>
+                <div>
+                    <img src="Assets/images/baby1.avif" class="rounded-lg w-full object-cover">
+                </div>
         </section>
         <!-- Categories Section -->
-        <section>
-            <div> Categories</div>
-            <div class="grid grid-cols-3 gap-3 mb-4">
-                    <div class="category" id="apparel">
-                        <img src="Assets/categories/12-300x300-1-1-1.jpg.webp" alt="Baby Image" class="h-70 w-200">
-                        <h1>Apparels & Accessories</h1>
-                    </div>
-                    <div class="category" id="gear">
-                        <img src="Assets/categories/baby-gear-1.webp" alt="Baby Image" class="h-70 w-200">
-                        <h1>Baby Gear</h1>
-                    </div>
-                    <div class="category" id="toys">
-                        <img src="Assets/categories/baby-toys.webp" alt="Baby Image" class="h-70 w-200">
-                        <h1>Baby Toys</h1>
-                    </div>
-                    <div class="category" id="nursery">
-                        <img src="Assets/categories/nursery.webp" alt="Baby Image" class="h-70 w-200">
-                        <h1>Baby Nursery</h1>
-                    </div>
-                    <div class="category" id="nursing"> 
-                        <img src="Assets/categories/nursing.webp" alt="Baby Image" class="h-70 w-200">
-                        <h1>Baby Nursing</h1>
-                    </div>
-                    <div class="category" id="transport">
-                        <img src="Assets/categories/transport.webp" alt="Baby Image" class="h-70 w-200">
-                        <h1>Baby Transport</h1>
-                    </div>
+        <section class="py-16 px-4 md:px-12">
+            <h2 class="text-2xl font-bold mb-8 text-center">Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="category border p-4 rounded-lg hover:shadow-md cursor-pointer" id="apparel">
+                    <img src="Assets/categories/12-300x300-1-1-1.jpg.webp" alt="Baby Image" class="mb-4 rounded-md">
+                    <h1 class="font-semibold">Apparels & Accessories</h1>
+                </div>
+                <div class="category border p-4 rounded-lg hover:shadow-md cursor-pointer" id="gear">
+                    <img src="Assets/categories/baby-gear-1.webp" alt="Baby Image" class="mb-4 rounded-md">
+                    <h1 class="font-semibold">Baby Gear</h1>
+                </div>
+                <div class="category border p-4 rounded-lg hover:shadow-md cursor-pointer" id="toys">
+                    <img src="Assets/categories/baby-toys.webp" alt="Baby Image" class="mb-4 rounded-md">
+                    <h1 class="font-semibold">Baby Toys</h1>
+                </div>
+                <div class="category border p-4 rounded-lg hover:shadow-md cursor-pointer" id="nursery">
+                    <img src="Assets/categories/nursery.webp" alt="Baby Image" class="mb-4 rounded-md">
+                    <h1 class="font-semibold">Baby Nursery</h1>
+                </div>
+                <div class="category border p-4 rounded-lg hover:shadow-md cursor-pointer" id="nursing">
+                    <img src="Assets/categories/nursing.webp" alt="Baby Image" class="mb-4 rounded-md">
+                    <h1 class="font-semibold">Baby Nursing</h1>
+                </div>
+                <div class="category border p-4 rounded-lg hover:shadow-md cursor-pointer" id="transport">
+                    <img src="Assets/categories/transport.webp" alt="Baby Image" class="mb-4 rounded-md">
+                    <h1 class="font-semibold">Baby Transport</h1>
+                </div>
             </div>
         </section>
-        <!-- Featured Items Section -->
-         <section>
-            <h1>Featured Products</h1>
-            <div class="grid grid-cols-3 gap-2">
-                <div>
-                    <div>display area</div>
-                    <div>
-                        <img src="Assets/featured/bag1.webp" alt="Baby Image" class="active">
-                        <img src="Assets/featured/bag2.webp" alt="Baby Image" class="hidden">
-                        <img src="Assets/featured/bag3.webp" alt="Baby Image" class="hidden">
-                    </div>
-                    <div>Bear Club Shoulder Diaper Bag- Sky blue</div>
-                    <div class="hidden">
-                        <h1>Key Features</h1>
-                        <ul>
-                            <li>condition: 100% Brand New</li>
-                            <li>Main Material:Microfiber,Waterproof</li>
-                            <li> PVC lining Size:L41*W16*H30 cm</li>
-                            <li>Diaper Bags</li>
-                        </ul>
-                    </div>
-                    <div>15,000</div>
-                    <div class="hidden">
-                        <div>-</div>
-                        <div>0</div>
-                        <div>+</div>
-                    </div>
-                    <div class="hidden"><button>Add to Cart</button></div>
-                </div>
-                <div>
-                    <div>display area</div>
-                    <div>
-                        <img src="Assets/featured/thermo1.webp" alt="Baby Image" class="active">
-                        <img src="Assets/featured/thermo2.webp" alt="Baby Image" class="hidden">
-                        <img src="Assets/featured/thermo3.webp" alt="Baby Image" class="hidden">
-                    </div>
-                    <div>Digital Animal Shaped Thermometer For Children-Rapid Read</div>
-                    <div class="hidden">
-                        <p>Digital Thermometers Are Medical Devices Used To Determine 
-                            Body Temperature In Children, Babies, Adult Men And Women. 
-                            Thermometers Are Used In Medical Care To Determine If A Patient Is Having A Fever. 
-                            More Often Than Not, Fevers Are A Symptom Of underlying infection.</p>
-                    </div>
-                    <div>500</div>
-                    <div class="hidden">
-                        <div>-</div>
-                        <div>0</div>
-                        <div>+</div>
-                    </div>
-                    <div class="hidden"><button>Add to Cart</button></div>
-                </div>
-                <div>
-                    <div>display area</div>
-                    <div>
-                        <img src="Assets/featured/dafi1.webp" alt="Baby Image" class="active">
-                        <img src="Assets/featured/dafi2.webp" alt="Baby Image" class="hidden">
-                        <img src="Assets/featured/dafi3.webp" alt="Baby Image" class="hidden">
-                    </div>
-                    <div>Dafi Maternity Pants/ Pads-Disposable Pads (L/XL)</div>
-                    <div class="hidden">
-                        <p>Dafi Maternity Pants/ Pads-Disposable Pads (L/XL) are lightweight briefs for women, 
-                            which are used just for one time and then tossed away. After a few days of your baby’s 
-                            delivery, the panties can be worn and no need for underwear.</p>
-                    </div>
-                    <div>800</div>
-                    <div class="hidden">
-                        <div>-</div>
-                        <div>0</div>
-                        <div>+</div>
-                    </div>
-                    <div class="hidden"><button>Add to Cart</button></div>
-                </div>
-            </div>
-         </section>
     </main>
-    <footer class="max-w-6xl mx-auto px-3 py-10 bg-black border-lg shadow-lg rounded-lg text-white text-center mb-4">
-        <p>&copy; Anova Baby Shop 2026. All Rights Reserved</p>
-    </footer>
+    <footer class="bg-white text-center py-6 mt-10">
+  <p class="text-sm text-gray-500">
+    © 2026 Anova Babyshop
+  </p>
+</footer>
     <script src="index.js"></script>
 </body>
 
