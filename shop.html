@@ -9,33 +9,36 @@
 </head>
 
 <body class="bg-gray-100">
-    <header class="max-w-6xl mx-auto px-4 py-15 bg-white border-lg shadow-lg rounded-lg mt-2 mb-4">
-        <nav class="flex items-center justify-between ">
-            <div class="basis-2/6">Anova Baby Shop</div>
-            <div class="flex items-center gap-2 basis-3/6 px-2">
-                <div><a href="index.html">Home</a></div>
-                <div><a href="shop.html">Shop</a></div>
-                <div><a href="about.html">About US</a></div>
-                <div><a href="contact.html">Contact Us</a></div>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Anova Babyshop</a>
+            <div class="md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="shop.html" class="hover:text-gray-600 font-semibold">Shop</a>
+                <a href="about.html" class="hover:text-gray-600">About Us</a>
+                <a href="contact.html" class="hover:text-gray-600">Contact Us</a>
             </div>
-            <div class="basis-1/6"><a href="login.html">Sign In</a></div>
-            <div class="flex gap-1 basis-1/6">
-                <button class="flex gap-1 cursor-pointer" id="btnItems"> 
-                    <div>Cart</div>
-                <div id="counter">0</div>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
+                <button class="relative text-lg">
+                    🛒
+                    <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
+                        id="counter">0</span>
+                </button>
             </div>
+
+
         </nav>
     </header>
     <main class="max-w-6xl mx-auto px-3 py-2">
         <div class="grid grid-cols-4 gap-4">
-            <div class="item" data-category="apparel" id="item01" data-image="Assets/shop/trouser1.jpeg" data-name="Baby-Image">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="apparel" id="item01">
                 <div>
-                    <img src="Assets/shop/trouser1.jpeg" alt="Baby Image" class="active">
+                    <img src="Assets/shop/trouser1.jpeg" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/trouser2.jpeg" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/trouser3.jpeg" alt="Baby Image" class="hidden">
                 </div>
-                <div>5 piece baby trouser sets 0-24 months</div>
+                <div class="font-medium">5 piece baby trouser sets 0-24 months</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -55,22 +58,22 @@
                         </li>
                     </ul>
                 </div>
-                <div>1300</div>
+                <div>Kshs.1300</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Apparel & Accessories</div>
+                <div class="text-sm">Apparel & Accessories</div>
             </div>
-            <div class="item" data-category="apparel" id="item02">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="apparel" id="item02">
                 <div>
-                    <img src="Assets/shop/shirt.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/shirt.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/shirt2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/shirt3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>2 Pc Dungaree Set( White T-shirt And Dungaree)</div>
+                <div class="font-semibold">2 Pc Dungaree Set( White T-shirt And Dungaree)</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>his 2 Pc Dungaree Set( White T-shirt And Dungaree) is funky and
@@ -78,22 +81,22 @@
                         100% indian cotton which is very strong and durable. This one piece set is
                         perfect for both indoor and outdoor activities.</p>
                 </div>
-                <div>1200</div>
+                <div>kshs.1200</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Apparel & Accessories</div>
+                <div class="text-sm">Apparel & Accessories</div>
             </div>
-            <div class="item" data-category="apparel" id="item03">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="apparel" id="item03">
                 <div>
-                    <img src="Assets/shop/boy1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/boy1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/boy2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/boy3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>2 piece boy’s set(vest and shorts)</div>
+                <div class="font-semibold">2 piece boy’s set(vest and shorts)</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -104,22 +107,22 @@
                         <li>Features: With stripes.</li>
                     </ul>
                 </div>
-                <div>1099</div>
+                <div>Kshs.1099</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Apparel & Accessories</div>
+                <div class="text-sm">Apparel & Accessories</div>
             </div>
-            <div class="item" data-category="apparel" id="item04">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="apparel" id="item04">
                 <div>
-                    <img src="Assets/shop/tod1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/tod1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/tod2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/tod3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Newborn to toddler baby sweater.cardigan for 0-36 months</div>
+                <div class="font-semibold">Newborn to toddler baby sweater.cardigan for 0-36 months</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -130,22 +133,22 @@
                         <li>Single body suit</li>
                     </ul>
                 </div>
-                <div>1200</div>
+                <div>Kshs.1200</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Apparel & Accessories</div>
+                <div class="text-sm" >Apparel & Accessories</div>
             </div>
-            <div class="item" data-category="toys" id="item05">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="toys" id="item05">
                 <div>
-                    <img src="Assets/shop/gaga1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/gaga1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/gaga2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/gaga3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Infantino Go Gaga! Box of Cheer Baby Learning Toy 15 Pieces Age- Newborn & Above</div>
+                <div class="font-semibold">Infantino Go Gaga! Box of Cheer Baby Learning Toy 15 Pieces Age- Newborn & Above</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -159,22 +162,22 @@
                         </li>
                     </ul>
                 </div>
-                <div>4500</div>
+                <div>Kshs.4500</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Baby Toys</div>
+                <div class="text-sm">Baby Toys</div>
             </div>
-            <div class="item" data-category="toys" id="item06">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="toys" id="item06">
                 <div>
-                    <img src="Assets/shop/card1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/card1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/card2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/card3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Interactive Learning Flash Cards Toy / Montessori Educational toys talking flashcards learning
+                <div class="font-semibold">Interactive Learning Flash Cards Toy / Montessori Educational toys talking flashcards learning
                     machine</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
@@ -188,22 +191,22 @@
                             animals. Very funny Interactive teaching.</li>
                     </ul>
                 </div>
-                <div>1000</div>
+                <div>Kshs.1000</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Baby Toys</div>
+                <div class="text-sm">Baby Toys</div>
             </div>
-            <div class="item" data-category="toys" id="item07">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="toys" id="item07">
                 <div>
-                    <img src="Assets/shop/doc1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/doc1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/doc2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/doc3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Kids pretend and play Doctor set</div>
+                <div class="font-semibold">Kids pretend and play Doctor set</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -212,22 +215,22 @@
                         <li>Gives inspiration for kids in medical field</li>
                     </ul>
                 </div>
-                <div>800</div>
+                <div>Kshs.800</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Baby Toys</div>
+                <div class="text-sm">Baby Toys</div>
             </div>
-            <div class="item" data-category="toys" id="item08">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="toys" id="item08">
                 <div>
-                    <img src="Assets/shop/ndege1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/ndege1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/ndege2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/ndege3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Realistic Electric toy airplane with music and lights</div>
+                <div class="font-semibold">Realistic Electric toy airplane with music and lights</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>Realistic airplane design with vibrant colors
@@ -236,22 +239,22 @@
                         Electric-powered with automatic movement
                         Durable, child-safe, and perfect for indoor play</p>
                 </div>
-                <div>1200</div>
+                <div>Kshs.1200</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Baby Toys</div>
+                <div class="text-sm">Baby Toys</div>
             </div>
-            <div class="item" data-category="transport" id="item09">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="transport" id="item09">
                 <div>
-                    <img src="Assets/shop/walk1.jpeg" alt="Baby Image" class="active">
+                    <img src="Assets/shop/walk1.jpeg" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/walk2.jpeg" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/walk3.jpeg" alt="Baby Image" class="hidden">
                 </div>
-                <div>Convertible Baby Walker with 3 Adjustable Height Settings</div>
+                <div class="font-semibold">Convertible Baby Walker with 3 Adjustable Height Settings</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -261,20 +264,20 @@
                         <li>It is designed for babies typically between 7 and 24 months old. </li>
                     </ul>
                 </div>
-                <div>6500</div>
+                <div>Kshs.6500</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Baby Transport</div>
+                <div class="text-sm">Baby Transport</div>
             </div>
-            <div class="item" data-category="transport" id="item10">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="transport" id="item10">
                 <div>
-                    <img src="Assets/shop/ter.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/ter.webp" alt="Baby Image" class="rounded-md mb-3">
                 </div>
-                <div>2 Way big wheels all terrain Baby Stroller – Red</div>
+                <div class="font-semibold">2 Way big wheels all terrain Baby Stroller – Red</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -284,22 +287,22 @@
                         <li>Age: 0-4 years.</li>
                     </ul>
                 </div>
-                <div>17500</div>
+                <div>Kshs.17500</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Transport</div>
+                <div class="text-sm">Baby Transport</div>
             </div>
-            <div class="item" data-category="transport" id="item11">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="transport" id="item11">
                 <div>
-                    <img src="Assets/shop/value1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/value1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/value2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/value3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>3 in 1 Value Pack Baby Stroller Set</div>
+                <div class="font-semibold">3 in 1 Value Pack Baby Stroller Set</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>Baby stroller and car seat are essential for new parents, which is why so many parents choose 
@@ -308,22 +311,22 @@
                         these duos customarily feature a car seat that can easily be clipped directly into the matching 
                         stroller so you can stop wasting time switching your baby between the two.</p>
                 </div>
-                <div>21500</div>
+                <div>Kshs.21500</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Transport</div>
+                <div class="text-sm">Baby Transport</div>
             </div>
-            <div class="item" data-category="transport" id="item12">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="transport" id="item12">
                 <div>
-                    <img src="Assets/shop/hip1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/hip1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/hip2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/hip3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>3 in 1 Baby Carrier With Hip Seat- Newborn to 3 years</div>
+                <div class="font-semibold">3 in 1 Baby Carrier With Hip Seat- Newborn to 3 years</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -333,22 +336,22 @@
                         <li>Ergonomics design: 30°angle hip seat makes this baby carrier much easier and comfortable to carry.</li>
                     </ul>
                 </div>
-                <div>2500</div>
+                <div>Kshs.2500</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Transport</div>
+                <div class="text-sm">Baby Transport</div>
             </div>
-            <div class="item" data-category="gear" id="item13">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="gear" id="item13">
                 <div>
-                    <img src="Assets/shop/roc1.png" alt="Baby Image" class="active">
+                    <img src="Assets/shop/roc1.png" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/roc2.jpeg" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/roc3.jpeg" alt="Baby Image" class="hidden">
                 </div>
-                <div>3 in 1 portable baby rocker with music and vibrations (0-3 years) – Pink</div>
+                <div class="font-semibold">3 in 1 portable baby rocker with music and vibrations (0-3 years) – Pink</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -358,22 +361,22 @@
                         <li>Comfortable.</li>
                     </ul>
                 </div>
-                <div>5499</div>
+                <div>Kshs.5499</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Gear</div>
+                <div class="text-sm">Baby Gear</div>
             </div>
-            <div class="item" data-category="gear" id="item14">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="gear" id="item14">
                 <div>
-                    <img src="Assets/shop/net1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/net1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/net2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/net3.jpeg" alt="Baby Image" class="hidden">
                 </div>
-                <div>Cool baby electric baby swing with mosquito net, timer, remote and mosquito net</div>
+                <div class="font-semibold">Cool baby electric baby swing with mosquito net, timer, remote and mosquito net</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -383,22 +386,22 @@
                         <li>5 point harness and nonslip feet for extra security</li>
                     </ul>
                 </div>
-                <div>10499</div>
+                <div>Kshs.10499</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Gear</div>
+                <div class="text-sm">Baby Gear</div>
             </div>
-            <div class="item" data-category="gear" id="item15">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="gear" id="item15">
                 <div>
-                    <img src="Assets/shop/shak1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/shak1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/shak2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/shak3.jpeg" alt="Baby Image" class="hidden">
                 </div>
-                <div>5-in-1 Baby Shaker Vibration Rocker Chair (0-36months)</div>
+                <div class="font-semibold">5-in-1 Baby Shaker Vibration Rocker Chair (0-36months)</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>Are you still worried about the baby crying? Are you still 
@@ -406,22 +409,22 @@
                         Don’t worry, choose Electric Baby Shaker green, you can free your hands, baby can play
                          easily, sleep</p>
                 </div>
-                <div>9499</div>
+                <div>Kshs.9499</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Gear</div>
+                <div class="text-sm">Baby Gear</div>
             </div>
-            <div class="item" data-category="gear" id="item16">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="gear" id="item16">
                 <div>
-                    <img src="Assets/shop/boun1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/boun1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/boun2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/boun3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>5-in-1 Bouncer Chair Multifunction Adjustable Music (0-36months)</div>
+                <div class="font-semibold">5-in-1 Bouncer Chair Multifunction Adjustable Music (0-36months)</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>Are you still worried about the music baby crying? Are you still suffering
@@ -430,22 +433,22 @@
                          The 5-in-1 Bouncer Chair has a Multi-function mode (sleeping basket mode, basket mode, 
                          rocking chair mode, seat mode, crib mode)</p>
                 </div>
-                <div>9499</div>
+                <div>Kshs.9499</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Gear</div>
+                <div class="text-sm">Baby Gear</div>
             </div>
-            <div class="item" data-category="nursery" id="item17">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="nursery" id="item17">
                 <div>
-                    <img src="Assets/shop/sleep1.jpeg" alt="Baby Image" class="active">
+                    <img src="Assets/shop/sleep1.jpeg" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/sleep2.jpeg" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/sleep3.jpeg" alt="Baby Image" class="hidden">
                 </div>
-                <div>Baby co-sleeper Playpen/cot/bed With Infant Changing Station And Mosquito Net</div>
+                <div class="font-semibold">Baby co-sleeper Playpen/cot/bed With Infant Changing Station And Mosquito Net</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>The rocking co-sleeper Baby Playpen With Infant Changing Station includes a removable 
@@ -455,22 +458,22 @@
                         nap time and playtime. As your child grows, simply remove the other features and the
                         playpen becomes a safe atmosphere for your little one to play and explore.</p>
                 </div>
-                <div>13499</div>
+                <div>Kshs.13499</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Nursery</div>
+                <div class="text-sm">Baby Nursery</div>
             </div>
-            <div class="item" data-category="nursery" id="item18">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="nursery" id="item18">
                 <div>
-                    <img src="Assets/shop/mat1.jpeg" alt="Baby Image" class="active">
+                    <img src="Assets/shop/mat1.jpeg" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/mat2.jpeg" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/mat3.jpeg" alt="Baby Image" class="hidden">
                 </div>
-                <div>Baby Co-sleeper Bed/ Crib with a changing mat- Blue</div>
+                <div class="font-semibold">Baby Co-sleeper Bed/ Crib with a changing mat- Blue</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -480,22 +483,22 @@
                         <li>You can simply tilt the crib if your little one is ever congested, helping to breathe better</li>
                     </ul>
                 </div>
-                <div>12999</div>
+                <div>Kshs.12999</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Nursery</div>
+                <div class="text-sm">Baby Nursery</div>
             </div>
-            <div class="item" data-category="nursery" id="item19">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="nursery" id="item19">
                 <div>
-                    <img src="Assets/shop/cot1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/cot1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/cot2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/cot3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Baby Cot Basket newborn cradle/Baby Shaker</div>
+                <div class="font-semibold">Baby Cot Basket newborn cradle/Baby Shaker</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -504,21 +507,21 @@
                         <li>portable Baby Small Shaker</li>
                     </ul>
                 </div>
-                <div>4999</div>
+                <div>Kshs.4999</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Baby Nursery</div>
+                <div class="text-sm">Baby Nursery</div>
             </div>
-            <div class="item" data-category="nursery" id="item20">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="nursery" id="item20">
                 <div>
-                    <img src="Assets/shop/sup1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/sup1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/sup2.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Baby Back Support Pillow</div>
+                <div class="font-semibold">Baby Back Support Pillow</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <ul>
@@ -528,21 +531,21 @@
                         <li>Lightweight and portable</li>
                     </ul>
                 </div>
-                <div>2499</div>
+                <div>Kshs.2499</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div >Baby Nursery</div>
+                <div class="text-sm">Baby Nursery</div>
             </div>
-            <div class="item" data-category="feeding" id="item21">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="feeding" id="item21">
                 <div>
-                    <img src="Assets/shop/pad1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/pad1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/pad2.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>3IN1 Breast Therapy Ice Pack Pads Hot Or Cold Use For Nursing Mother Hot Cold Breastfeeding Pad</div>
+                <div class="font-semibold">3IN1 Breast Therapy Ice Pack Pads Hot Or Cold Use For Nursing Mother Hot Cold Breastfeeding Pad</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>3IN1 Breast Therapy Ice Pack Pads Hot Or Cold Use For Nursing Mother Hot Cold Breastfeeding Pad.  
@@ -551,22 +554,22 @@
                         and swelling while Hot Therapy helps to relieve mastitis and plugged ducts. Cooling relief soothes
                          tender breasts. Cold use to soothe sore or engorged breasts.</p>
                 </div>
-                <div>950</div>
+                <div>Kshs.950</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Nursing & Feeding</div>
+                <div class="text-sm">Nursing & Feeding</div>
             </div>
-             <div class="item" data-category="feeding" id="item22">
+             <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="feeding" id="item22">
                 <div>
-                    <img src="Assets/shop/meal1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/meal1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/meal2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/meal3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>4 IN 1 MEALTIME SET</div>
+                <div class="font-semibold">4 IN 1 MEALTIME SET</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>4 in 1 Baby Mealtime Set offers everything you need for feeding your little one. 
@@ -575,22 +578,22 @@
                         Ergonomic and easy grip handles allow for a firm grip in …•Helps to make mealtimes 
                         easy and fun and great for little ones</p>
                 </div>
-                <div>749</div>
+                <div>Kshs.749</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div class="item feeding">Nursing & Feeding</div>
+                <div class="text-sm">Nursing & Feeding</div>
             </div>
-             <div class="item" data-category="feeding" id="item23">
+             <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="feeding" id="item23">
                 <div>
-                    <img src="Assets/shop/set1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/set1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/set2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/set3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>BABY FEEDING SET</div>
+                <div class="font-semibold">BABY FEEDING SET</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>This thoughtfully curated set includes high-quality, BPA-free feeding bottles 
@@ -598,41 +601,43 @@
                          gentle …The unique, anti-colic nipple helps the baby to swallow less air 
                          while feeding, reduce the incidence of colic to protect your baby’s tummy.</p>
                 </div>
-                <div>600</div>
+                <div>Kshs.600</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div>Nursing & Feeding</div>
+                <div class="text-sm">Nursing & Feeding</div>
             </div>
-            <div class="item" data-category="feeding" id="item24">
+            <div class="item border rounded-lg p-4 hover:shadow-md flex flex-col justify-between" data-category="feeding" id="item24">
                 <div>
-                    <img src="Assets/shop/bib1.webp" alt="Baby Image" class="active">
+                    <img src="Assets/shop/bib1.webp" alt="Baby Image" class="rounded-md mb-3">
                     <img src="Assets/shop/bib2.webp" alt="Baby Image" class="hidden">
                     <img src="Assets/shop/bib3.webp" alt="Baby Image" class="hidden">
                 </div>
-                <div>Disposable baby bibs, waterproof for feeding and portable ( 20 pcs pack)</div>
+                <div class="font-semibold">Disposable baby bibs, waterproof for feeding and portable ( 20 pcs pack)</div>
                 <div class="hidden">
                     <h1>Key Features</h1>
                     <p>Comfortable & Reliable: Our waterproof toddler bib is made of a four layer of fabrics, 
                         with the first layer being a non-woven fabric, skin-friendly, and comfortable to wear</p>
                 </div>
-                <div>600</div>
+                <div>Kshs.600</div>
                 <div class="hidden">
                     <div>-</div>
                     <div>0</div>
                     <div>+</div>
                 </div>
                 <div class="hidden"><button>Add to Cart</button></div>
-                <div class="item feeding">Nursing & Feeding</div>
+                <div class="text-sm">Nursing & Feeding</div>
             </div>
         </div>
     </main>
-    <footer class="max-w-6xl mx-auto px-3 py-10 bg-black border-lg shadow-lg rounded-lg text-white text-center mb-4">
-        <p>&copy; Anova Baby Shop 2026. All Rights Reserved</p>
-    </footer>
+     <footer class="bg-white text-center py-6 mt-10">
+  <p class="text-sm text-gray-500">
+    © 2026 Anova Babyshop
+  </p>
+</footer>
     <script src="cart.js"></script>
 </body>
 
