@@ -6,28 +6,29 @@ const transport=document.querySelectorAll(".transport");
 const toys=document.querySelectorAll(".toys");
 const apparel=document.querySelectorAll(".Apparels");
 const items = document.querySelectorAll(".item");
+const btnItems=document.getElementById("btnItems");
+const counter=document.getElementById("counter");
 
-
-category.forEach(x=>{
-    const id=x.id;
-    x.addEventListener("click",function(){
-        if(this.id==="apparel"){
-            window.location.href="shop.html?category=apparel";
-        }
-    })
-})
 
 const params = new URLSearchParams(window.location.search);
-const selectedCategory = params.get("category");
+const selectedCategory = params.get("id");
 // console.log(selectedCategory);
 
-// console.log(items);
-items.forEach(item => {
+if(!selectedCategory || selectedCategory === "null"){
+    if(!window.location.href.includes("shop.html")){
+        window.location.href="shop.html";
+    }
+}
+else{
+    items.forEach(item => {
     if (item.dataset.category !== selectedCategory) {
         item.style.display="none";
     }
     // console.log(item.class);
 });
+}
+// console.log(items);
+
 
 items.forEach(item=>{
     const itemId=item.id;
@@ -36,25 +37,11 @@ items.forEach(item=>{
     })
 })
 
-// const param=new URLSearchParams(window.location.search);
-// const selectedItem=param.get("id");
-// const images=document.querySelector(".image");
-// const details=document.querySelector(".details");
-// items.forEach(item=>{
-//     // console.log(item.id);
-//     if(item.id === selectedItem){
-//         // get data from HTML
-//         const imgSrc = item.dataset.image;
-//         const name = item.dataset.name;
-
-//         // image
-//         const span = document.createElement("span");
-//         span.innerHTML = `<img src="${imgSrc}" alt="${name}">`;
-//         images.appendChild(span);
-
-//         // details (optional)
-//         const title = document.createElement("h2");
-//         title.textContent = name;
-//         details.appendChild(title);
-//     }
-// })
+ let localItems=Number(localStorage.length);
+ counter.textContent=localItems;
+ const itemsCart=Number(counter.innerText);
+ if(itemsCart>0){
+    btnItems.addEventListener("click",function(){
+        window.location.href="product.html";
+    })
+ }

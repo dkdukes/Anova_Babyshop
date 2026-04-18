@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Items</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="max-w-6xl mx-auto bg-gray-100 px-4 py-2">
+    <div class="flex gap-2">
+        <div class="bg-white border-lg rounded-lg shadow-lg px-4 py-2 max-w-3xl mx-auto flex flex-col">
+            <div class="flex gap-2">
+                <div class="basis-2/6">TITLE</div>
+                <div class="basis-1/6">PRICE</div>
+                <div class="basis-1/6">QUANTITY</div>
+                <div class="basis-1/6">SUB-TOTAL</div>
+                <div class="basis-1/6">ACTION</div>
+            </div>
+            <hr>
+            <div class="products"></div>
+        </div>
+        <div class="checkout max-w-3xl mx-auto border px-4 py-2 w-100"></div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+
+</html>

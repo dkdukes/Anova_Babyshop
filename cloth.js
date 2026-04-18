@@ -5,10 +5,11 @@ const plus = document.getElementById("btnPlus");
 const valueText = document.getElementById("btnValue");
 const cartItems = document.getElementById("btnCart");
 const counter = document.getElementById("counter");
+const btnItems=document.getElementById("btnItems");
 
 const param = new URLSearchParams(window.location.search);
 const selectedItem = param.get("id");
-//fetcg data from db
+//fetch data from db
 async function getData() {
   try {
     const res = await fetch("http://localhost:3000/posts");
@@ -43,15 +44,17 @@ getData();
 
 let num = Number(valueText.innerText);
 
-minus.addEventListener("click", function () {
+minus.addEventListener("click", function (e) {
+  e.preventDefault();
   let count = 1;
-  if (num >= 1) {
+  if (num > 1) {
     num -= count;
   }
   valueText.textContent = num;
 });
 
-plus.addEventListener("click", function () {
+plus.addEventListener("click", function (e) {
+  e.preventDefault();
   let count = 1;
   num += count;
   valueText.textContent = num;
@@ -60,14 +63,36 @@ plus.addEventListener("click", function () {
 let itemsArray = [];
 cartItems.addEventListener("click", function (e) {
   e.preventDefault();
-  if (!itemsArray.includes(selectedItem)) {
-    itemsArray.push(selectedItem);
-    let num = Number(counter.innerText);
-    num += 1;
-    counter.textContent = num;
-    let quantity=Number(valueText.innerText);
-    const dataItems={"id":selectedItem,"quantity":quantity};
-    localStorage.setItem(selectedItem,JSON.stringify(dataItems));
+
+  let quantity = Number(valueText.innerText);
+
+  let existingItem = localStorage.getItem(selectedItem);
+
+  if (existingItem) {
+    // update quantity
+    let parsed = JSON.parse(existingItem);
+    parsed.quantity += quantity;
+    localStorage.setItem(selectedItem, JSON.stringify(parsed));
+  } else {
+    // add new item
+    const dataItems = {
+      id: selectedItem,
+      quantity: quantity
+    };
+    localStorage.setItem(selectedItem, JSON.stringify(dataItems));
+  }
+
+  // update counter
+  let num = Number(localStorage.length);
+  counter.textContent = num;
+});
+ let localItems=Number(localStorage.length);
+ counter.textContent=localItems;
+
+btnItems.addEventListener("click", function () {
+  const items = Number(counter.innerText);
+
+  if (items > 0) {
+    window.location.href = "product.html";
   }
 });
-console.log(itemsArray);
