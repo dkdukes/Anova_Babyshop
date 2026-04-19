@@ -20,7 +20,11 @@
             </div>
             <div class="flex items-center gap-4">
                 <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
+<<<<<<< HEAD
                 <button class="relative text-lg">
+=======
+                <button class="relative text-lg" id="btnItems">
+>>>>>>> main
                     🛒
                     <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
                         id="counter">0</span>
@@ -30,26 +34,44 @@
 
         </nav>
     </header>
-    <main class="max-w-xl mx-auto mt-30 border-md shadow-lg rounded-lg bg-white px-6 py-4 mb-4">
-        <form action="">
-            <div class="text-2xl text-center font-semibold font-serif mb-4">Login</div>
-            <div class="flex flex-col gap-3">
-                <input type="email" name="email" id="email" placeholder="Email Address" required
-                    class="border px-3 py-2 mb-4 rounded-lg">
-                <input type="password" name="pass" id="pass" placeholder="Password" required
-                    class="border px-3 py-2 mb-4 rounded-lg">
-            </div>
+    <main class="max-w-xl mx-auto mt-24 shadow-lg rounded-lg bg-white px-6 py-6">
+
+        <form class="space-y-4">
+            <h2 class="text-2xl text-center font-semibold mb-4">Login</h2>
+
+            <input type="email" id="email" placeholder="Email Address" required
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <input type="password" id="pass" placeholder="Password" required
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <button type="submit" id="login"
+                class="w-full py-2 text-lg font-semibold bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                Login
+            </button>
         </form>
-        <button
-            class="w-full py-2 text-center text-2xl font-semibold font-serif bg-blue-300 text-white rounded-md mb-4" id="login">Login</button>
-        <div>Don't have an account?<a href="register.html">Register</a></div>
-        <p class="message"></p>
+
+        <p class="text-center text-sm mt-4">
+            Don't have an account?
+            <a href="register.html" class="text-blue-500 font-medium hover:underline">Register</a>
+        </p>
+
+        <p class="message text-center text-sm mt-2 text-red-500"></p>
+
     </main>
+<<<<<<< HEAD
      <footer class="bg-white text-center py-6 mt-10">
   <p class="text-sm text-gray-500">
     © 2026 Anova Babyshop
   </p>
 </footer>
+=======
+    <footer class="bg-white text-center py-6 mt-10">
+        <p class="text-sm text-gray-500">
+            © 2026 Anova Babyshop
+        </p>
+    </footer>
+>>>>>>> main
     <script src="login.js"></script>
 </body>
 

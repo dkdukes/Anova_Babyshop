@@ -33,18 +33,29 @@ async function getData() {
         const span = document.createElement("span");
 
         span.innerHTML = `
-          <div class="flex gap-2 mb-4 itemss"> 
-            <div class="basis-2/6">${title}</div>
-            <div class="basis-1/6">${price}</div>
-            <div class="flex gap-1 basis-1/6">
-              <div class="bg-cyan-200 rounded-full px-3 py-2 cursor-pointer btnMinus">-</div>
-              <div class="text-center px-3 py-2 btnValue">${quantity}</div>
-              <div class="bg-cyan-200 rounded-full px-3 py-2 mr-10 cursor-pointer btnPlus">+</div>
-            </div>
-            <div class="basis-1/6 subTotal">${subTotal}</div>
-            <div class="basis-1/6 delete" data-id="${cartItem.id}">DELETE</div>
-          </div>
-        `;
+  <div class="grid grid-cols-5 items-center gap-2 mb-4 itemss">
+
+    <div>${title}</div>
+
+    <div>${price}</div>
+
+    <div class="flex items-center gap-2">
+      <button class="bg-gray-200 hover:bg-gray-300 rounded px-2 btnMinus">−</button>
+      <span class="btnValue">${quantity}</span>
+      <button class="bg-gray-200 hover:bg-gray-300 rounded px-2 btnPlus">+</button>
+    </div>
+
+    <div class="subTotal">${subTotal}</div>
+
+    <button 
+      class="delete text-red-500 hover:text-red-700 hover:scale-110 transition"
+      data-id="${cartItem.id}"
+    >
+      🗑️
+    </button>
+
+  </div>
+`;
         product.appendChild(span);
 
         const totalSub = span.querySelector(".subTotal");
@@ -96,18 +107,43 @@ async function getData() {
     const totalOrder = document.createElement("span");
     const shipping = 200;
     const totalPay = total + shipping;
-    totalOrder.innerHTML = `<div class="flex flex-col">
-    <div class="mb-5 text-center text-2xl font-serif">Anova Baby Shop</div>
-    <div class="mb-2 text-right font-semi-bold">P.O Box 68-00100 Nairobi.</div>
-    <div class="mb-4 text-right">Contact: 0726 128 360</div>
-    <div class="text-center text-xl">Order Summary</div>
-    <hr>
-    <div class="mt-2 mb-2">Pay: <span class="px-5 checkout-total">0</span></div>
-    <div class="mb-2">Shipping Fee:<span class="px-5"> ${shipping}</span></div>
-    <div class="">Total Pay: <span class="px-5 total-pay">0</span></div>
-    <hr>
-    <div><button class="mt-4 w-full px-4 py-2 rounded-lg bg-orange-300 hover:bg-orange-400" id="itemsCheck">CheckOut</button></div>
-    </div>`;
+    totalOrder.innerHTML = `
+  <div class="flex flex-col">
+
+    <div class="mb-4 text-center text-2xl font-semibold">Anova Baby Shop</div>
+
+    <div class="text-sm text-right text-gray-600">P.O Box 68-00100 Nairobi</div>
+    <div class="mb-4 text-sm text-right text-gray-600">Contact: 0726 128 360</div>
+
+    <div class="text-center text-lg font-semibold mb-2">Order Summary</div>
+    <hr class="mb-3">
+
+    <div class="flex justify-between mb-2">
+      <span>Subtotal</span>
+      <span class="checkout-total">KSh 0</span>
+    </div>
+
+    <div class="flex justify-between mb-2">
+      <span>Shipping Fee</span>
+      <span>KSh ${shipping}</span>
+    </div>
+
+    <div class="flex justify-between font-semibold text-lg mt-2">
+      <span>Total Pay</span>
+      <span class="total-pay">KSh 0</span>
+    </div>
+
+    <hr class="my-4">
+
+    <button 
+      id="itemsCheck"
+      class="w-full py-2 rounded-lg bg-orange-400 text-white font-semibold hover:bg-orange-500 transition"
+    >
+      Proceed to Checkout
+    </button>
+
+  </div>
+`;
     checkout.appendChild(totalOrder);
 
     updateGrandTotal();

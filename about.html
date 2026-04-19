@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-gray-100">
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -18,7 +20,11 @@
             </div>
             <div class="flex items-center gap-4">
                 <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
+<<<<<<< HEAD
                 <button class="relative text-lg">
+=======
+                <button class="relative text-lg" id="btnItems">
+>>>>>>> main
                     🛒
                     <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
                         id="counter">0</span>
@@ -28,54 +34,68 @@
 
         </nav>
     </header>
-    <main class="max-w-6xl mx-auto px-4 py-2">
-        <div class="flex gap-4 mb-4">
-            <div>
-                <img src="Assets/featured/mother-and-daughter.webp" alt="Baby Image" class="h-100 w-400">
+    <main class="py-20 px-6 md:px-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+            <!-- Text -->
+            <div class="md:col-span-5">
+                <h1 class="text-4xl font-extrabold mb-6">Kenya's favorite baby store</h1>
+                <p class="text-gray-600 mb-4">
+                    Anova Baby Shop was founded in 2023 with a vision of building
+                    the best Baby and Mama shop in Kenya.
+                </p>
+                <p class="text-gray-600">
+                    We are passionate about babies and their wellbeing and that is why we
+                    carry the best brands trusted by mums for generations.
+                </p>
             </div>
-            <div>
-                <div>Kenya's favorite baby store</div>
-                <div>
-                    Anova Baby Shop was founded in 2023 with a vision of building 
-                    the best Baby and Mama shop in Kenya. 
+
+            <!-- Image -->
+            <div class="md:col-span-7 flex justify-center">
+                <div class="w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden shadow-lg">
+                    <img src="Assets/featured/mother-and-daughter.webp" alt="Baby Image" class="w-full h-full object-cover">
                 </div>
-                <div>
-                    We are passionate about babies and their wellbeing and that is why we 
-                    carry the best brands for babies that have been trusted by mums for generations. 
-                    We have grown to be one of the most reputable and reliable baby shops in Kenya. 
-                    You can also find us on Jumia and Jiji platforms. We have a large catalogue of 
-                    products for newborn babies all the way to 11-year-old children.
-                </div>
             </div>
-        </div>
-        <div class="flex gap-4 justify-between mb-4">
-            <div>
-                <div>icon</div>
-                <div>SHIPPING</div>
-                <div>For Every Order</div>
-            </div>
-            <div>
-                <div>icon</div>
-                <div>3-DAY RETURN</div>
-                <div>Money Back Guarantee</div>
-            </div>
-            <div>
-                <div>icon</div>
-                <div>24/7 SUPPORT</div>
-                <div>Online Consultations</div>
-            </div>
-             <div>
-                <div>icon</div>
-                <div>SAFE SHOPPING</div>
-                <div>Safe Shopping Guarantee</div>
-            </div>
+
         </div>
     </main>
+<<<<<<< HEAD
      <footer class="bg-white text-center py-6 mt-10">
   <p class="text-sm text-gray-500">
     © 2026 Anova Babyshop
   </p>
 </footer>
     <script src="script.js"></script>
+=======
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 text-center">
+    <div>
+        <div class="text-2xl mb-2">🚚</div>
+        <div class="font-semibold">SHIPPING</div>
+        <div class="text-sm text-gray-500">For Every Order</div>
+    </div>
+    <div>
+        <div class="text-2xl mb-2">↩️</div>
+        <div class="font-semibold">3-DAY RETURN</div>
+        <div class="text-sm text-gray-500">Money Back Guarantee</div>
+    </div>
+    <div>
+        <div class="text-2xl mb-2">💬</div>
+        <div class="font-semibold">24/7 SUPPORT</div>
+        <div class="text-sm text-gray-500">Online Consultations</div>
+    </div>
+    <div>
+        <div class="text-2xl mb-2">🔒</div>
+        <div class="font-semibold">SAFE SHOPPING</div>
+        <div class="text-sm text-gray-500">Safe Shopping Guarantee</div>
+    </div>
+</div>
+    <footer class="bg-white text-center py-6 mt-10">
+        <p class="text-sm text-gray-500">
+            © 2026 Anova Babyshop
+        </p>
+    </footer>
+    <script src="about.js"></script>
+>>>>>>> main
 </body>
+
 </html>

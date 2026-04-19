@@ -1,10 +1,10 @@
-// const userPass = document.getElementById("pass");
-// const userEmail = document.getElementById("email");
-// const userMessage = document.querySelector(".message");
-// const register = document.getElementById("register");
-// const login = document.getElementById("login");
-// const btnItems=document.getElementById("btnItems");
-// const counter=document.getElementById("counter");
+const userPass = document.getElementById("pass");
+const userEmail = document.getElementById("email");
+const userMessage = document.querySelector(".message");
+const register = document.getElementById("register");
+const login = document.getElementById("login");
+const btnItems=document.getElementById("btnItems");
+const counter=document.getElementById("counter");
 // // Show message
 // function showMessage(text, type = "error") {
 //   userMessage.textContent = text;
@@ -62,12 +62,13 @@
 
 //  let localItems=Number(localStorage.length);
 //  counter.textContent=localItems;
+ let localItems=Number(localStorage.length);
+ counter.textContent=localItems;
 
-
-//  const items=Number(counter.innerText);
-//  if(items>0){
-//     btnItems.addEventListener("click",function(){
-//         window.location.href="product.html";
-//     })
-//  }
+ const items=Number(counter.innerText);
+ if(items>0){
+    btnItems.addEventListener("click",function(){
+        window.location.href="product.html";
+    })
+ }
 
