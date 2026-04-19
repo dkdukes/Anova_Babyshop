@@ -9,23 +9,25 @@
 </head>
 
 <body class="bg-gray-100">
-    <header class="max-w-6xl mx-auto px-4 py-15 bg-white border-lg shadow-lg rounded-lg mt-2 mb-4">
-        <nav class="flex items-center justify-between ">
-            <div class="basis-2/6">Anova Baby Shop</div>
-            <div class="flex items-center gap-2 basis-3/6 px-2">
-                <div><a href="index.html">Home</a></div>
-                <div><a href="shop.html">Shop</a></div>
-                <div><a href="about.html">About US</a></div>
-                <div><a href="contact.html">Contact Us</a></div>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Anova Babyshop</a>
+            <div class="md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="shop.html" class="hover:text-gray-600 font-semibold">Shop</a>
+                <a href="about.html" class="hover:text-gray-600">About Us</a>
+                <a href="contact.html" class="hover:text-gray-600">Contact Us</a>
             </div>
-            <div class="basis-1/6"><a href="login.html">Sign In</a></div>
-             <div class="flex gap-1 basis-1/6">
-               <a href="product.html">
-                <button class="flex gap-1 cursor-pointer" id="btnItems"> 
-                    <div>Cart</div>
-                <div id="counter">0</div>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
+                <button class="relative text-lg" id="btnItems">
+                    🛒
+                    <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
+                        id="counter">0</span>
+                </button>
             </div>
+
+
         </nav>
     </header>
     <main class="max-w-6xl mx-auto px-4 py-2">
@@ -49,8 +51,10 @@
 
         </div>
     </main>
-    <footer class="max-w-6xl mx-auto px-3 py-10 bg-black border-lg shadow-lg rounded-lg text-white text-center mb-4">
-        <p>&copy; Anova Baby Shop 2026. All Rights Reserved</p>
+    <footer class="bg-white text-center py-6 mt-10">
+        <p class="text-sm text-gray-500">
+            © 2026 Anova Babyshop
+        </p>
     </footer>
     <script src="cloth.js"></script>
 </body>

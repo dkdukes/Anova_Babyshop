@@ -7,99 +7,111 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-100">
-    <header class="max-w-6xl mx-auto px-4 py-15 bg-white border-lg shadow-lg rounded-lg mt-2 mb-4">
-        <nav class="flex items-center justify-between ">
-            <div class="basis-2/6">Anova Baby Shop</div>
-            <div class="flex items-center gap-2 basis-3/6 px-2">
-                <div><a href="index.html">Home</a></div>
-                <div><a href="shop.html">Shop</a></div>
-                <div><a href="about.html">About US</a></div>
-                <div><a href="contact.html">Contact Us</a></div>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Anova Babyshop</a>
+            <div class="md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="shop.html" class="hover:text-gray-600 font-semibold">Shop</a>
+                <a href="about.html" class="hover:text-gray-600">About Us</a>
+                <a href="contact.html" class="hover:text-gray-600">Contact Us</a>
             </div>
-            <div class="basis-1/6"><a href="login.html">Sign In</a></div>
-             <div class="flex gap-1 basis-1/6">
-               <a href="product.html">
-                 <button class="flex gap-1 cursor-pointer" id="btnItems"> 
-                    <div>Cart</div>
-                <div id="counter">0</div>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
+                <button class="relative text-lg" id="btnItems">
+                    🛒
+                    <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
+                        id="counter">0</span>
+                </button>
             </div>
+
+
         </nav>
     </header>
-    <main class="max-w-6xl mx-auto px-4 py-2">
-        <div class="flex gap-10">
-            <div class="px-10 py-2 border shadow-lg rounded-lg bg-white w-140">
-                <div>Do You Have Some Question ?</div>
-                <div>We are at your disposal 7 days a week!</div>
-                <div>
-                    <div>Westlands</div>
-                    <div class="flex gap-3 mb-4">
-                        <div>icon</div>
-                        <div>0720127890</div>
-                    </div>
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <div class="flex flex-col md:flex-row gap-10">
+
+        <!-- Contact Info -->
+        <div class="p-6 border shadow-lg rounded-lg bg-white w-full md:w-1/2">
+            <h2 class="text-xl font-semibold mb-2">Do You Have Some Question?</h2>
+            <p class="text-gray-600 mb-6">We are at your disposal 7 days a week!</p>
+
+            <div class="mb-4">
+                <h3 class="font-medium">Westlands</h3>
+                <div class="flex gap-3 text-gray-600">
+                    <span>📞</span>
+                    <span>0720127890</span>
                 </div>
-                <div>
-                    <div>Nairobi CBD</div>
-                    <div class="flex gap-3 mb-4">
-                        <div>icon</div>
-                        <div>0729427490</div>
-                    </div>
-                </div>
-                <div>
-                    <div>Mombasa:</div>
-                    <div class="flex gap-3 mb-4">
-                        <div>icon</div>
-                        <div>0716497390</div>
-                    </div>
-                </div>
-                <div>Monday-Friday: 7:00 AM-7:00 PM</div>
-                <div>Saturday 8:00 AM-4:00 PM</div>
-                <div>Sunday 8:00 AM-2:00 PM</div>
-                <div>Anovatechnologies871@gmail.com</div>
             </div>
-            <div class="bg-white border shadow-lg rounded-lg w-140 px-3 py-2">
-                <div>Get In Touch</div>
-                <div>
-                    <form action="">
-                        <div>
-                            <div class="flex gap-5" >
-                            <div class=" flex flex-col">
-                            <label for="fname">First Name:</label>
-                            <input type="text" name="fname" id="fname" class="border py-2 w-60 px-2">
-                            </div>
-                            <div class="flex flex-col">
-                            <label for="lname">First Name:</label>
-                            <input type="text" name="lname" id="lname" class="border py-2 w-60 px-2">
-                            </div>
-                            </div>
-                            <div>
-                                <div class="flex flex-col ">
-                                    <label for="phone">Phone Number:</label>
-                                    <input type="number" name="phone" id="phone" class="border py-2 px-2">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex flex-col">
-                                    <label for="email">Email Address:</label>
-                                    <input type="email" name="email" id="email" class="border py-2 px-2">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex flex-col">
-                                <label for="message">Your Message:</label>
-                                <textarea name="message" id="message" class="border py-2 px-2"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <button>Submit</button>
+
+            <div class="mb-4">
+                <h3 class="font-medium">Nairobi CBD</h3>
+                <div class="flex gap-3 text-gray-600">
+                    <span>📞</span>
+                    <span>0729427490</span>
                 </div>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="font-medium">Mombasa</h3>
+                <div class="flex gap-3 text-gray-600">
+                    <span>📞</span>
+                    <span>0716497390</span>
+                </div>
+            </div>
+
+            <div class="text-sm text-gray-600 space-y-1 mt-6">
+                <p>Monday–Friday: 7:00 AM – 7:00 PM</p>
+                <p>Saturday: 8:00 AM – 4:00 PM</p>
+                <p>Sunday: 8:00 AM – 2:00 PM</p>
+                <p class="mt-2">📧 Anovatechnologies871@gmail.com</p>
             </div>
         </div>
-    </main>
-     <footer class="max-w-6xl mx-auto px-3 py-10 bg-black border-lg shadow-lg rounded-lg text-white text-center mb-4">
-        <p>&copy; Anova Baby Shop 2026. All Rights Reserved</p>
+
+        <!-- Form -->
+        <div class="bg-white border shadow-lg rounded-lg w-full md:w-1/2 p-6">
+            <h2 class="text-xl font-semibold mb-4">Get In Touch</h2>
+
+            <form class="space-y-4">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex flex-col w-full">
+                        <label for="fname" class="text-sm">First Name</label>
+                        <input type="text" id="fname" class="border rounded px-3 py-2 w-full" required>
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label for="lname" class="text-sm">Last Name</label>
+                        <input type="text" id="lname" class="border rounded px-3 py-2 w-full" required>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="phone" class="text-sm">Phone Number</label>
+                    <input type="tel" id="phone" class="border rounded px-3 py-2 w-full" required>
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="email" class="text-sm">Email Address</label>
+                    <input type="email" id="email" class="border rounded px-3 py-2 w-full" required>
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="message" class="text-sm">Your Message</label>
+                    <textarea id="message" rows="4" class="border rounded px-3 py-2 w-full" required></textarea>
+                </div>
+
+                <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+    </div>
+</main>
+     <footer class="bg-white text-center py-6 mt-10">
+        <p class="text-sm text-gray-500">
+            © 2026 Anova Babyshop
+        </p>
     </footer>
-    <script src="script.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
