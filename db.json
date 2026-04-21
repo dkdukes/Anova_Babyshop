@@ -1,172 +1,196 @@
 {
-    "posts":[
-        {
-            "id":"item01",
-            "image":"Assets/shop/trouser1.jpeg",
-            "title":"5 piece baby trouser sets 0-24 months",
-            "description":"Our 5 Set Assorted Baby Pants offer comfort, style, and versatility for your little one’s wardrobe.Made from premium quality fabric, these pants are soft, durable, and gentle on your baby’s skin. We have an assortment of beautiful designs and colours to choose from, and sizes available for babies aged 3 months, 6 months, 9 months, 12 months, 18 months and 24 months. They are made of cotton which is breathable and friendly to baby’s skin. They’re reasonably priced too! Perfect for everyday wear or special occasions, our Assorted Baby Pants are a practical and adorable choice for growing babies. Choose our Assorted Baby Pants for comfort, cuteness, and convenience.",
-            "price":1300
-        },
-         {
-            "id":"item02",
-            "image":"Assets/shop/shirt.webp",
-            "title":"2 Pc Dungaree Set( White T-shirt And Dungaree)",
-            "description":"his 2 Pc Dungaree Set( White T-shirt And Dungaree) is funky and stylish for your baby to wear for any occasion. The dungaree material is 100% indian cotton which is very strong and durable. This one piece set is perfect for both indoor and outdoor activities.",
-            "price":1200
-        },
-        {
-            "id":"item03",
-            "image":"Assets/shop/boy1.webp",
-            "title":"2 piece boy’s set(vest and shorts)",
-            "description":"Composition: Cotton Neckline: Round neck Sleeves: Sleeveless Features: With stripes.",
-            "price":1099
-        },
-         {
-            "id":"item04",
-            "image":"Assets/shop/tod1.webp",
-            "title":"Newborn to toddler baby sweater.cardigan for 0-36 months",
-            "description":"Color:Different colors available Material: 100% High Quality woolUnisex, great for both boys and girls Long sleeved body suit suitable for casual,daily, party or photo shoot use Single body suit",
-            "price":1200
-        },
-         {
-            "id":"item05",
-            "image":"Assets/shop/gaga1.webp",
-            "title":"Infantino Go Gaga! Box of Cheer Baby Learning Toy 15 Pieces Age- Newborn & Above",
-            "description":" The Infantino Box of Cheer provides three must-have baby toys, including Rock ‘n Rings,Orbit Rattle, and Ring Links.15 colorful play pieces encourage your baby’s fine motor and cognitive skills.The Rock n’ Rings have five colorful rings that can be stacked on the rocking base.The Ring Links contain eight perfectly sized rings for your baby to explore exciting textures.The Orbit Rattle is a unique spinning rattle with a sensory experience when shaken or spun.",
-            "price":1200
-        },
-        {
-            "id":"item06",
-            "image":"Assets/shop/card1.webp",
-            "title":"Interactive Learning Flash Cards Toy / Montessori Educational toys talking flashcards learning machine",
-            "description":"Great speech therapy toys —— Great speech therapy toys for toddlers 1-3 to either introduce or reinforce sight words.Multi-functional Game —— Flashcards game set can not only recognize things but also learn words and how to pronounce.Fun Interactive Toys—— Some animals can also make noises to satisfy children’s curiosity,children can imitate the sounds of animals. Very funny Interactive teaching.",
-            "price":1000
-        },
-         {
-            "id":"item07",
-            "image":"Assets/shop/doc1.webp",
-            "title":"Kids pretend and play Doctor set",
-            "description":"Comes in different packages and colors Has different medical tools inside Gives inspiration for kids in medical field",
-            "price":800
-        },
-        {
-            "id":"item08",
-            "image":"Assets/shop/ndege1.webp",
-            "title":"Realistic Electric toy airplane with music and lights",
-            "description":"Realistic airplane design with vibrant colors Flashing LED lights for a dynamic play experience Built-in music and sound effects for interactive fun Electric-powered with automatic movement Durable, child-safe, and perfect for indoor play",
-            "price":1200
-        },
-        {
-            "id":"item09",
-            "image":"Assets/shop/walk1.jpeg",
-            "title":"Convertible Baby Walker with 3 Adjustable Height Settings",
-            "description":"It has three adjustable height settings to adapt to a child’s growth.It offers multiple modes, including a traditional baby walker, a push walker, a food tray, and a puzzle mode.The design includes interactive features like a steering wheel, horn, and gear shifter.It is designed for babies typically between 7 and 24 months old.",
-            "price":6500
-        },
-        {
-            "id":"item10",
-            "image":"Assets/shop/ter.webp",
-            "title":"2 Way big wheels all terrain Baby Stroller – Red",
-            "description":"Wheel Lock: Yes Maximum Child Weight (kg): 18 Gender: Unisex Age: 0-4 years.",
-            "price":17500
-        },
-         {
-            "id":"item11",
-            "image":"Assets/shop/value1.webp",
-            "title":"3 in 1 Value Pack Baby Stroller Set",
-            "description":"Baby stroller and car seat are essential for new parents, which is why so many parents choose to opt in for a car seat and stroller set to save space, time and money. They are versatile, easy to use and a great space saver for traveling families: Colloquially known as travel systems,these duos customarily feature a car seat that can easily be clipped directly into the matching stroller so you can stop wasting time switching your baby between the two.",
-            "price":21500
-        },
-        {
-            "id":"item12",
-            "image":"Assets/shop/hip1.webp",
-            "title":"3 in 1 Baby Carrier With Hip Seat- Newborn to 3 years",
-            "description":"It does not cause strain on the mother’s back because of hip seat.Bigger hence safer and used for a long time.Breathable material to improve air circulation during hot days.Ergonomics design: 30°angle hip seat makes this baby carrier much easier and comfortable to carry.",
-            "price":2500
-        },
-        {
-            "id":"item13",
-            "image":"Assets/shop/roc1.png",
-            "title":"3 in 1 portable baby rocker with music and vibrations (0-3 years) – Pink",
-            "description":"For ages 6 Months+ Appropriate for unisex Easy to use.Comfortable.",
-            "price":5499
-        },
-         {
-            "id":"item14",
-            "image":"Assets/shop/net1.webp",
-            "title":"Cool baby electric baby swing with mosquito net, timer, remote and mosquito net",
-            "description":"Brand: Cool baby Has Bluetooth and a downloadable app in any of your device for Smart Control.Baby sways insight while you tackle to-dos. Baby swing converts to the newborn bouncy seat 5 point harness and nonslip feet for extra security",
-            "price":10499
-        },
-        {
-            "id":"item15",
-            "image":"Assets/shop/shak1.webp",
-            "title":"5-in-1 Baby Shaker Vibration Rocker Chair (0-36months)",
-            "description":"Are you still worried about the baby crying? Are you still suffering from your arms because you are holding your child for a long time? Don’t worry, choose Electric Baby Shaker green, you can free your hands, baby can play easily, sleep",
-            "price":9499
-        },
-         {
-            "id":"item16",
-            "image":"Assets/shop/boun1.webp",
-            "title":"5-in-1 Bouncer Chair Multifunction Adjustable Music (0-36months)",
-            "description":"Are you still worried about the music baby crying? Are you still suffering from your arms because you are holding your child for a long time? Don’t worry,choose AIBAB rocking chair, you can free your hands, baby can play easily, sleep. The 5-in-1 Bouncer Chair has a Multi-function mode (sleeping basket mode, basket mode, rocking chair mode, seat mode, crib mode)",
-            "price":9499
-        },
-        {
-            "id":"item17",
-            "image":"Assets/shop/sleep1.jpeg",
-            "title":"Baby co-sleeper Playpen/cot/bed With Infant Changing Station And Mosquito Net",
-            "description":"The rocking co-sleeper Baby Playpen With Infant Changing Station includes a removable changing table and a hanging mosquito net. With an option of a stationary frame or rocking bottom The playpen has an overhead toy bar with detachable soft toys.Has side storage areas for storing diapers, wipes, diaper rash cream etc, ideal for both nap time and playtime. As your child grows, simply remove the other features and the playpen becomes a safe atmosphere for your little one to play and explore.",
-            "price":13499
-        },
-        {
-            "id":"item18",
-            "image":"Assets/shop/mat1.jpeg",
-            "title":"Baby Co-sleeper Bed/ Crib with a changing mat- Blue",
-            "description":"Side sleeping crib has been specifically designed to allow you and your baby to sleep next to each other without the need to share the same bed.The ease of attachment and assembly, plus the removable and washable lining make life easy, making the bedside crib the perfect addition to any nursery.Designed with comfort in mind, the side sleeping crib includes a padded mattress as well as a net window for extra air circulation.You can simply tilt the crib if your little one is ever congested, helping to breathe better",
-            "price":12999
-        },
-        {
-            "id":"item19",
-            "image":"Assets/shop/cot1.webp",
-            "title":"Baby Cot Basket newborn cradle/Baby Shaker",
-            "description":"Hand Basket Iron foldable portable Baby Small Shaker",
-            "price":4999
-        },
-        {
-            "id":"item20",
-            "image":"Assets/shop/sup1.webp",
-            "title":"Baby Back Support Pillow",
-            "description":"High quality seating position 360 degrees of comfy support Lightweight and portable",
-            "price":2499
-        },
-        {
-            "id":"item21",
-            "image":"Assets/shop/pad1.webp",
-            "title":"3IN1 Breast Therapy Ice Pack Pads Hot Or Cold Use For Nursing Mother Hot Cold Breastfeeding Pad",
-            "description":"3IN1 Breast Therapy Ice Pack Pads Hot Or Cold Use For Nursing Mother Hot Cold Breastfeeding Pad.They help with Pain Relief – Premium Plush Gel Bead Breast Packs provide soothing relief for the most common breastfeeding challenges. Cold Therapy relieves pain associated with engorgement and swelling while Hot Therapy helps to relieve mastitis and plugged ducts. Cooling relief soothes tender breasts. Cold use to soothe sore or engorged breasts.",
-            "price":950
-        },
-        {
-            "id":"item22",
-            "image":"Assets/shop/meal1.webp",
-            "title":"4 IN 1 MEALTIME SET",
-            "description":"4 in 1 Baby Mealtime Set offers everything you need for feeding your little one.BPA free, nitrosamine free, and more. Perfect for 1-2 and 2-4 year …this cup will your child with learning independent drinking in a simple and comfortable way.Ergonomic and easy grip handles allow for a firm grip in …•Helps to make mealtimes easy and fun and great for little ones",
-            "price":749
-        },
-        {
-            "id":"item23",
-            "image":"Assets/shop/set1.webp",
-            "title":"BABY FEEDING SET",
-            "description":"This thoughtfully curated set includes high-quality, BPA-free feeding bottles designed for easy grip, a soft silicone pacifier to soothe your baby, and gentle …The unique, anti-colic nipple helps the baby to swallow less air while feeding, reduce the incidence of colic to protect your baby’s tummy.",
-            "price":600
-        },
-        {
-            "id":"item24",
-            "image":"Assets/shop/bib1.webp",
-            "title":"Disposable baby bibs, waterproof for feeding and portable ( 20 pcs pack)",
-            "description":"Comfortable & Reliable: Our waterproof toddler bib is made of a four layer of fabrics,with the first layer being a non-woven fabric, skin-friendly, and comfortable to wear",
-            "price":600
-        }
-    ]
+  "users": [
+    {
+      "firstName": "John",
+      "secondName": "Doe",
+      "email": "fedulike@gmail.com",
+      "password": "DUKE0987",
+      "id": "T2Jk9hL8V4Y"
+    },
+    {
+      "firstName": "Trevian",
+      "secondName": "Nyanchama",
+      "email": "trev@gmail.com",
+      "password": "Trevian09",
+      "id": "fYxdfASe_Ho"
+    },
+    {
+      "firstName": "Tashly",
+      "secondName": "Gesare",
+      "email": "tashly@gmail.com",
+      "password": "Tashly09",
+      "id": "Rgpy4RDxdCU"
+    }
+  ],
+  "posts": [
+    {
+      "id": "item01",
+      "image": "Assets/shop/trouser1.jpeg",
+      "title": "5 piece baby trouser sets 0-24 months",
+      "description": "Our 5 Set Assorted Baby Pants offer comfort, style, and versatility for your little one’s wardrobe.Made from premium quality fabric, these pants are soft, durable, and gentle on your baby’s skin. We have an assortment of beautiful designs and colours to choose from, and sizes available for babies aged 3 months, 6 months, 9 months, 12 months, 18 months and 24 months. They are made of cotton which is breathable and friendly to baby’s skin. They’re reasonably priced too! Perfect for everyday wear or special occasions, our Assorted Baby Pants are a practical and adorable choice for growing babies. Choose our Assorted Baby Pants for comfort, cuteness, and convenience.",
+      "price": 1300
+    },
+    {
+      "id": "item02",
+      "image": "Assets/shop/shirt.webp",
+      "title": "2 Pc Dungaree Set( White T-shirt And Dungaree)",
+      "description": "his 2 Pc Dungaree Set( White T-shirt And Dungaree) is funky and stylish for your baby to wear for any occasion. The dungaree material is 100% indian cotton which is very strong and durable. This one piece set is perfect for both indoor and outdoor activities.",
+      "price": 1200
+    },
+    {
+      "id": "item03",
+      "image": "Assets/shop/boy1.webp",
+      "title": "2 piece boy’s set(vest and shorts)",
+      "description": "Composition: Cotton Neckline: Round neck Sleeves: Sleeveless Features: With stripes.",
+      "price": 1099
+    },
+    {
+      "id": "item04",
+      "image": "Assets/shop/tod1.webp",
+      "title": "Newborn to toddler baby sweater.cardigan for 0-36 months",
+      "description": "Color:Different colors available Material: 100% High Quality woolUnisex, great for both boys and girls Long sleeved body suit suitable for casual,daily, party or photo shoot use Single body suit",
+      "price": 1200
+    },
+    {
+      "id": "item05",
+      "image": "Assets/shop/gaga1.webp",
+      "title": "Infantino Go Gaga! Box of Cheer Baby Learning Toy 15 Pieces Age- Newborn & Above",
+      "description": " The Infantino Box of Cheer provides three must-have baby toys, including Rock ‘n Rings,Orbit Rattle, and Ring Links.15 colorful play pieces encourage your baby’s fine motor and cognitive skills.The Rock n’ Rings have five colorful rings that can be stacked on the rocking base.The Ring Links contain eight perfectly sized rings for your baby to explore exciting textures.The Orbit Rattle is a unique spinning rattle with a sensory experience when shaken or spun.",
+      "price": 1200
+    },
+    {
+      "id": "item06",
+      "image": "Assets/shop/card1.webp",
+      "title": "Interactive Learning Flash Cards Toy / Montessori Educational toys talking flashcards learning machine",
+      "description": "Great speech therapy toys —— Great speech therapy toys for toddlers 1-3 to either introduce or reinforce sight words.Multi-functional Game —— Flashcards game set can not only recognize things but also learn words and how to pronounce.Fun Interactive Toys—— Some animals can also make noises to satisfy children’s curiosity,children can imitate the sounds of animals. Very funny Interactive teaching.",
+      "price": 1000
+    },
+    {
+      "id": "item07",
+      "image": "Assets/shop/doc1.webp",
+      "title": "Kids pretend and play Doctor set",
+      "description": "Comes in different packages and colors Has different medical tools inside Gives inspiration for kids in medical field",
+      "price": 800
+    },
+    {
+      "id": "item08",
+      "image": "Assets/shop/ndege1.webp",
+      "title": "Realistic Electric toy airplane with music and lights",
+      "description": "Realistic airplane design with vibrant colors Flashing LED lights for a dynamic play experience Built-in music and sound effects for interactive fun Electric-powered with automatic movement Durable, child-safe, and perfect for indoor play",
+      "price": 1200
+    },
+    {
+      "id": "item09",
+      "image": "Assets/shop/walk1.jpeg",
+      "title": "Convertible Baby Walker with 3 Adjustable Height Settings",
+      "description": "It has three adjustable height settings to adapt to a child’s growth.It offers multiple modes, including a traditional baby walker, a push walker, a food tray, and a puzzle mode.The design includes interactive features like a steering wheel, horn, and gear shifter.It is designed for babies typically between 7 and 24 months old.",
+      "price": 6500
+    },
+    {
+      "id": "item10",
+      "image": "Assets/shop/ter.webp",
+      "title": "2 Way big wheels all terrain Baby Stroller – Red",
+      "description": "Wheel Lock: Yes Maximum Child Weight (kg): 18 Gender: Unisex Age: 0-4 years.",
+      "price": 17500
+    },
+    {
+      "id": "item11",
+      "image": "Assets/shop/value1.webp",
+      "title": "3 in 1 Value Pack Baby Stroller Set",
+      "description": "Baby stroller and car seat are essential for new parents, which is why so many parents choose to opt in for a car seat and stroller set to save space, time and money. They are versatile, easy to use and a great space saver for traveling families: Colloquially known as travel systems,these duos customarily feature a car seat that can easily be clipped directly into the matching stroller so you can stop wasting time switching your baby between the two.",
+      "price": 21500
+    },
+    {
+      "id": "item12",
+      "image": "Assets/shop/hip1.webp",
+      "title": "3 in 1 Baby Carrier With Hip Seat- Newborn to 3 years",
+      "description": "It does not cause strain on the mother’s back because of hip seat.Bigger hence safer and used for a long time.Breathable material to improve air circulation during hot days.Ergonomics design: 30°angle hip seat makes this baby carrier much easier and comfortable to carry.",
+      "price": 2500
+    },
+    {
+      "id": "item13",
+      "image": "Assets/shop/roc1.png",
+      "title": "3 in 1 portable baby rocker with music and vibrations (0-3 years) – Pink",
+      "description": "For ages 6 Months+ Appropriate for unisex Easy to use.Comfortable.",
+      "price": 5499
+    },
+    {
+      "id": "item14",
+      "image": "Assets/shop/net1.webp",
+      "title": "Cool baby electric baby swing with mosquito net, timer, remote and mosquito net",
+      "description": "Brand: Cool baby Has Bluetooth and a downloadable app in any of your device for Smart Control.Baby sways insight while you tackle to-dos. Baby swing converts to the newborn bouncy seat 5 point harness and nonslip feet for extra security",
+      "price": 10499
+    },
+    {
+      "id": "item15",
+      "image": "Assets/shop/shak1.webp",
+      "title": "5-in-1 Baby Shaker Vibration Rocker Chair (0-36months)",
+      "description": "Are you still worried about the baby crying? Are you still suffering from your arms because you are holding your child for a long time? Don’t worry, choose Electric Baby Shaker green, you can free your hands, baby can play easily, sleep",
+      "price": 9499
+    },
+    {
+      "id": "item16",
+      "image": "Assets/shop/boun1.webp",
+      "title": "5-in-1 Bouncer Chair Multifunction Adjustable Music (0-36months)",
+      "description": "Are you still worried about the music baby crying? Are you still suffering from your arms because you are holding your child for a long time? Don’t worry,choose AIBAB rocking chair, you can free your hands, baby can play easily, sleep. The 5-in-1 Bouncer Chair has a Multi-function mode (sleeping basket mode, basket mode, rocking chair mode, seat mode, crib mode)",
+      "price": 9499
+    },
+    {
+      "id": "item17",
+      "image": "Assets/shop/sleep1.jpeg",
+      "title": "Baby co-sleeper Playpen/cot/bed With Infant Changing Station And Mosquito Net",
+      "description": "The rocking co-sleeper Baby Playpen With Infant Changing Station includes a removable changing table and a hanging mosquito net. With an option of a stationary frame or rocking bottom The playpen has an overhead toy bar with detachable soft toys.Has side storage areas for storing diapers, wipes, diaper rash cream etc, ideal for both nap time and playtime. As your child grows, simply remove the other features and the playpen becomes a safe atmosphere for your little one to play and explore.",
+      "price": 13499
+    },
+    {
+      "id": "item18",
+      "image": "Assets/shop/mat1.jpeg",
+      "title": "Baby Co-sleeper Bed/ Crib with a changing mat- Blue",
+      "description": "Side sleeping crib has been specifically designed to allow you and your baby to sleep next to each other without the need to share the same bed.The ease of attachment and assembly, plus the removable and washable lining make life easy, making the bedside crib the perfect addition to any nursery.Designed with comfort in mind, the side sleeping crib includes a padded mattress as well as a net window for extra air circulation.You can simply tilt the crib if your little one is ever congested, helping to breathe better",
+      "price": 12999
+    },
+    {
+      "id": "item19",
+      "image": "Assets/shop/cot1.webp",
+      "title": "Baby Cot Basket newborn cradle/Baby Shaker",
+      "description": "Hand Basket Iron foldable portable Baby Small Shaker",
+      "price": 4999
+    },
+    {
+      "id": "item20",
+      "image": "Assets/shop/sup1.webp",
+      "title": "Baby Back Support Pillow",
+      "description": "High quality seating position 360 degrees of comfy support Lightweight and portable",
+      "price": 2499
+    },
+    {
+      "id": "item21",
+      "image": "Assets/shop/pad1.webp",
+      "title": "3IN1 Breast Therapy Ice Pack Pads Hot Or Cold Use For Nursing Mother Hot Cold Breastfeeding Pad",
+      "description": "3IN1 Breast Therapy Ice Pack Pads Hot Or Cold Use For Nursing Mother Hot Cold Breastfeeding Pad.They help with Pain Relief – Premium Plush Gel Bead Breast Packs provide soothing relief for the most common breastfeeding challenges. Cold Therapy relieves pain associated with engorgement and swelling while Hot Therapy helps to relieve mastitis and plugged ducts. Cooling relief soothes tender breasts. Cold use to soothe sore or engorged breasts.",
+      "price": 950
+    },
+    {
+      "id": "item22",
+      "image": "Assets/shop/meal1.webp",
+      "title": "4 IN 1 MEALTIME SET",
+      "description": "4 in 1 Baby Mealtime Set offers everything you need for feeding your little one.BPA free, nitrosamine free, and more. Perfect for 1-2 and 2-4 year …this cup will your child with learning independent drinking in a simple and comfortable way.Ergonomic and easy grip handles allow for a firm grip in …•Helps to make mealtimes easy and fun and great for little ones",
+      "price": 749
+    },
+    {
+      "id": "item23",
+      "image": "Assets/shop/set1.webp",
+      "title": "BABY FEEDING SET",
+      "description": "This thoughtfully curated set includes high-quality, BPA-free feeding bottles designed for easy grip, a soft silicone pacifier to soothe your baby, and gentle …The unique, anti-colic nipple helps the baby to swallow less air while feeding, reduce the incidence of colic to protect your baby’s tummy.",
+      "price": 600
+    },
+    {
+      "id": "item24",
+      "image": "Assets/shop/bib1.webp",
+      "title": "Disposable baby bibs, waterproof for feeding and portable ( 20 pcs pack)",
+      "description": "Comfortable & Reliable: Our waterproof toddler bib is made of a four layer of fabrics,with the first layer being a non-woven fabric, skin-friendly, and comfortable to wear",
+      "price": 600
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
