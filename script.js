@@ -1,11 +1,11 @@
 const userPass = document.getElementById("pass");
 const userEmail = document.getElementById("email");
-const fname=document.getElementById("fname");
-const lname=document.getElementById("lname");
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
 const userMessage = document.querySelector(".message");
 const register = document.getElementById("register");
-const btnItems=document.getElementById("btnItems");
-const counter=document.getElementById("counter");
+const btnItems = document.getElementById("btnItems");
+const counter = document.getElementById("counter");
 
 // Show message
 function showMessage(text, type = "error") {
@@ -13,8 +13,6 @@ function showMessage(text, type = "error") {
   userMessage.className =
     type === "success" ? "text-green-500" : "text-red-500";
 }
-
-
 
 //Register user
 register.addEventListener("click", function (e) {
@@ -24,13 +22,12 @@ register.addEventListener("click", function (e) {
   const user = validateUser(emailUser, passUser);
   if (user) {
     createUser(emailUser, passUser);
-     setTimeout(() => {
-        showMessage("Account created successfully!","success");
-      }, 1000);
+    setTimeout(() => {
+      showMessage("Account created successfully!", "success");
+      window.location.href = "shop.html";
+    }, 1000);
   }
 });
-
-
 
 //validate credentials
 function validateUser(emailUser, passUser) {
@@ -56,7 +53,7 @@ async function createUser(emailUser, passUser) {
     firstName: fname.value,
     secondName: lname.value,
     email: userEmail.value,
-    password: userPass.value
+    password: userPass.value,
   };
 
   try {
@@ -66,11 +63,11 @@ async function createUser(emailUser, passUser) {
       throw new Error("The network response was not ok!");
     }
 
-    const resData = await res.json(); 
+    const resData = await res.json();
 
     // check if user exists
-    const userExists = resData.some(user =>
-      user.email === emailUser && user.password === passUser
+    const userExists = resData.some(
+      (user) => user.email === emailUser && user.password === passUser,
     );
 
     if (userExists) {
@@ -80,16 +77,13 @@ async function createUser(emailUser, passUser) {
       const postRes = await fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
 
       const dataRes = await postRes.json();
-
-     
     }
-
   } catch (error) {
     console.log("Error", error);
   }
@@ -97,13 +91,12 @@ async function createUser(emailUser, passUser) {
 
 //  let localItems=Number(localStorage.length);
 //  counter.textContent=localItems;
- let localItems=Number(localStorage.length);
- counter.textContent=localItems;
+let localItems = Number(localStorage.length);
+counter.textContent = localItems;
 
- const items=Number(counter.innerText);
- if(items>0){
-    btnItems.addEventListener("click",function(){
-        window.location.href="product.html";
-    })
- }
-
+const items = Number(counter.innerText);
+if (items > 0) {
+  btnItems.addEventListener("click", function () {
+    window.location.href = "product.html";
+  });
+}

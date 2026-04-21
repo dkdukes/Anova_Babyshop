@@ -2,8 +2,8 @@ const userPass = document.getElementById("pass");
 const userEmail = document.getElementById("email");
 const userMessage = document.querySelector(".message");
 const login = document.getElementById("login");
-const btnItems=document.getElementById("btnItems");
-const counter=document.getElementById("counter");
+const btnItems = document.getElementById("btnItems");
+const counter = document.getElementById("counter");
 
 // Show message
 function showMessage(text, type = "error") {
@@ -19,7 +19,7 @@ login.addEventListener("click", function (e) {
   let passUser = userPass.value;
   const user = validateUser(emailUser, passUser);
   if (user) {
-    loginUser(emailUser,passUser);
+    loginUser(emailUser, passUser);
   }
 });
 
@@ -41,32 +41,32 @@ function validateUser(email, pass) {
 }
 
 // //login
-async function loginUser(emailUser,passUser) {
-    const res=await fetch("http://localhost:3000/users");
-    if(!res.ok){
-        throw new Error("The network response was not ok!");
-    }
-    const data=await res.json();
-    const userExist=data.find(user=>
-        user.email===emailUser && user.password===passUser
-    )
-    if(userExist){
-        setTimeout(()=>{
-            showMessage("Login successful!","success");
-        },1000);
-    }
-    else{
-        showMessage("User does not exist!");
-    }
+async function loginUser(emailUser, passUser) {
+  const res = await fetch("http://localhost:3000/users");
+  if (!res.ok) {
+    throw new Error("The network response was not ok!");
+  }
+  const data = await res.json();
+  const userExist = data.find(
+    (user) => user.email === emailUser && user.password === passUser,
+  );
+  if (userExist) {
+    setTimeout(() => {
+      showMessage("Login successful!", "success");
+      window.location.href = "shop.html";
+    }, 1000);
+    
+  } else {
+    showMessage("User does not exist!");
+  }
 }
 
+let localItems = Number(localStorage.length);
+counter.textContent = localItems;
 
- let localItems=Number(localStorage.length);
- counter.textContent=localItems;
-
- const items=Number(counter.innerText);
- if(items>0){
-    btnItems.addEventListener("click",function(){
-        window.location.href="product.html";
-    })
- }
+const items = Number(counter.innerText);
+if (items > 0) {
+  btnItems.addEventListener("click", function () {
+    window.location.href = "product.html";
+  });
+}

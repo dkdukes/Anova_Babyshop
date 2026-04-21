@@ -20,6 +20,30 @@
       "email": "tashly@gmail.com",
       "password": "Tashly09",
       "id": "Rgpy4RDxdCU"
+    },
+    {
+      "firstName": "John",
+      "secondName": "Doe",
+      "email": "johndoe@gmail.com",
+      "password": "John0987",
+      "id": "DJUW5HFjuJ4"
+    },
+    {
+      "firstName": "Hello",
+      "secondName": "You",
+      "email": "hello@gmail.com",
+      "password": "Hello0987",
+      "id": "P8-gsmueUp8"
+    }
+  ],
+  "contact": [
+    {
+      "firstName": "John",
+      "secondName": "Doe",
+      "phone": "0726128360",
+      "email": "fedulike@gmail.com",
+      "message": "Thankd for the good service, I really appreciate",
+      "id": "dmvGHTh_zYI"
     }
   ],
   "posts": [
