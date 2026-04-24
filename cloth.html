@@ -10,23 +10,37 @@
 
 <body class="bg-gray-100">
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold">Anova Babyshop</a>
-            <div class="md:flex items-center gap-6 text-sm font-medium">
-                <a href="index.html" class="hover:text-gray-600">Home</a>
-                <a href="shop.html" class="hover:text-gray-600 font-semibold">Shop</a>
-                <a href="about.html" class="hover:text-gray-600">About Us</a>
-                <a href="contact.html" class="hover:text-gray-600">Contact Us</a>
-            </div>
-            <div class="flex items-center gap-4">
-                <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
-                <button class="relative text-lg" id="btnItems">
-                    🛒
-                    <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
-                        id="counter">0</span>
-                </button>
+        <nav class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="Assets/images/Anova1.png" class="h-10 sm:h-12 md:h-14 lg:h-20 w-auto object-contain"
+                    alt="Anova Baby Shop Logo">
+            </a>
+
+            <!-- Links -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">Home</a>
+                <a href="shop.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">Shop</a>
+                <a href="about.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">About Us</a>
+                <a href="contact.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">Contact Us</a>
             </div>
 
+            <!-- Actions -->
+            <div class="flex items-center gap-4">
+                <a href="login.html"
+                    class="hidden md:block text-sm hover:bg-gray-600 hover:text-white px-3 py-2 rounded">
+                    Sign In
+                </a>
+
+                <button class="relative text-xl" id="btnItems">
+                    🛒
+                    <span id="counter"
+                        class="absolute -top-2 -right-2 bg-black text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                        0
+                    </span>
+                </button>
+            </div>
 
         </nav>
     </header>
