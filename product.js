@@ -137,9 +137,16 @@ async function getData() {
 
     <button 
       id="itemsCheck"
-      class="w-full py-2 rounded-lg bg-orange-400 text-white font-semibold hover:bg-orange-500 transition"
+      class="w-full py-2 rounded-lg bg-orange-400 text-white font-semibold hover:bg-orange-500 transition mb-4"
     >
       Proceed to Checkout
+    </button>
+
+     <button 
+      id="continueShop"
+      class="w-full py-2 rounded-lg bg-gray-400 text-white font-semibold hover:bg-gray-500 transition"
+    >
+      Continue Shopping
     </button>
 
   </div>
@@ -153,9 +160,16 @@ async function getData() {
     itemCheck.addEventListener("click", function () {
       localStorage.clear();
       setTimeout(() => {
-        window.location.href = "index.html";
+        window.location.href = "login.html";
       }, 1000);
     });
+
+    const contshop=document.getElementById("continueShop");
+    contshop.addEventListener("click",function(){
+      setTimeout(()=>{
+        window.location.href="shop.html";
+      },1000);
+    })
   } catch (error) {
     console.log("Fetch error:", error);
   }

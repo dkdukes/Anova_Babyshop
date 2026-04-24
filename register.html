@@ -10,55 +10,102 @@
 
 <body class="bg-gray-100">
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold">Anova Babyshop</a>
-            <div class="md:flex items-center gap-6 text-sm font-medium">
-                <a href="index.html" class="hover:text-gray-600">Home</a>
-                <a href="shop.html" class="hover:text-gray-600 font-semibold">Shop</a>
-                <a href="about.html" class="hover:text-gray-600">About Us</a>
-                <a href="contact.html" class="hover:text-gray-600">Contact Us</a>
+        <nav class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="Assets/images/Anova1.png" class="h-10 sm:h-12 md:h-14 lg:h-20 w-auto object-contain"
+                    alt="Anova Baby Shop Logo">
+            </a>
+
+            <!-- Links -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">Home</a>
+                <a href="shop.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">Shop</a>
+                <a href="about.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">About Us</a>
+                <a href="contact.html" class="hover:bg-gray-600 hover:text-white px-3 py-2 rounded">Contact Us</a>
             </div>
+
+            <!-- Actions -->
             <div class="flex items-center gap-4">
-                <a href="login.html" class="hidden md:block text-sm hover:text-gray-600">Sign In</a>
-                <button class="relative text-lg" id="btnItems">
+                <a href="login.html"
+                    class="hidden md:block text-sm hover:bg-gray-600 hover:text-white px-3 py-2 rounded">
+                    Sign In
+                </a>
+
+                <button class="relative text-xl" id="btnItems">
                     🛒
-                    <span class="absolute -top-2 -right-3 bg-black text-white text-xs px-1.5 rounded-full"
-                        id="counter">0</span>
+                    <span id="counter"
+                        class="absolute -top-2 -right-2 bg-black text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                        0
+                    </span>
                 </button>
             </div>
 
-
         </nav>
     </header>
-    <main class="max-w-xl mx-auto mt-24 shadow-lg rounded-lg bg-white px-6 py-6">
+    <main class="min-h-[80vh] flex items-center justify-center px-4">
 
-        <form class="space-y-4">
-            <h2 class="text-2xl text-center font-semibold mb-4">Sign Up</h2>
+        <div class="w-full max-w-md bg-white border border-gray-200 shadow-xl rounded-2xl p-8">
 
-            <input type="text" id="fname" placeholder="First Name" required
-                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <!-- Title -->
+            <h2 class="text-3xl font-bold text-center mb-2">Create Account</h2>
+            <p class="text-center text-gray-500 text-sm mb-6">
+                Join Anova Babyshop today
+            </p>
 
-            <input type="text" id="lname" placeholder="Last Name" required
-                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <!-- Form -->
+            <form id="registerForm" class="space-y-5">
 
-            <input type="email" id="email" placeholder="Email Address" required
-                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <!-- Name -->
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex flex-col w-full">
+                        <label class="text-sm mb-1">First Name</label>
+                        <input type="text" id="fname" placeholder="John" required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none transition">
+                    </div>
 
-            <input type="password" id="pass" placeholder="Password" required minlength="6"
-                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <div class="flex flex-col w-full">
+                        <label class="text-sm mb-1">Last Name</label>
+                        <input type="text" id="lname" placeholder="Doe" required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none transition">
+                    </div>
+                </div>
 
-            <button type="submit" id="register"
-                class="w-full py-2 text-lg font-semibold bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-                Register
-            </button>
-        </form>
+                <!-- Email -->
+                <div class="flex flex-col">
+                    <label class="text-sm mb-1">Email Address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none transition">
+                </div>
 
-        <p class="text-center text-sm mt-4">
-            Already have an account?
-            <a href="login.html" class="text-blue-500 font-medium hover:underline">Login</a>
-        </p>
+                <!-- Password -->
+                <div class="flex flex-col">
+                    <label class="text-sm mb-1">Password</label>
+                    <input type="password" id="pass" placeholder="••••••••" minlength="6" required
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none transition">
+                    <span class="text-xs text-gray-400 mt-1">Minimum 8 characters</span>
+                </div>
 
-        <p class="message text-center text-sm mt-2 text-red-500"></p>
+                <!-- Button -->
+                <button type="submit" id="register"
+                    class="w-full py-3 text-lg font-semibold bg-black text-white rounded-lg hover:bg-gray-800 transition duration-200">
+                    Create Account
+                </button>
+            </form>
+
+            <!-- Message -->
+            <div id="message" class="mt-5"></div>
+
+            <!-- Login Link -->
+            <p class="text-center text-sm mt-6 text-gray-600">
+                Already have an account?
+                <a href="login.html" class="text-black font-medium hover:underline">
+                    Login
+                </a>
+            </p>
+
+        </div>
 
     </main>
     <footer class="bg-white text-center py-6 mt-10">
